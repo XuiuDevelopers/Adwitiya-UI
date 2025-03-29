@@ -8,8 +8,12 @@
 class AdwButton extends HTMLElement {
     constructor() {
         super();
+
+        // Components
         const shadow = this.attachShadow({ mode: "closed" });
         const button = document.createElement("button");
+
+        // Attributes
         const type = this.getAttribute("type");
         const text = this.getAttribute("text");
         const width = this.getAttribute("width");
