@@ -11,6 +11,8 @@ class AdwButton extends HTMLElement {
         const button = document.createElement("button")
         const type = this.getAttribute("type")
         const text = this.getAttribute("text")
+        const width = this.getAttribute("width")
+        const onclick = this.getAttribute("onclick")
 
         button.textContent = text || "Button"
 
@@ -20,21 +22,29 @@ class AdwButton extends HTMLElement {
                 color : "black",
                 border : "0",
                 borderRadius : "8px",
-                minWidth : "150px",
+                minWidth : width || "150px",
                 padding : "8px",
                 fontFamily : "Inter",
                 fontSize : "0.9rem",
                 fontWeight : 700,
             },
             flat : {
-
+                backgroundColor : "white",
+                color : "black",
+                border : "0",
+                borderRadius : "8px",
+                minWidth : width || "150px",
+                padding : "8px",
+                fontFamily : "Inter",
+                fontSize : "0.9rem",
+                fontWeight : 700,
             },
             suggested : {
                 backgroundColor : "#3584e4",
                 color : "white",
                 border : "0",
                 borderRadius : "8px",
-                minWidth : "150px",
+                minWidth : width || "150px",
                 padding : "8px",
                 fontFamily : "Inter",
                 fontSize : "0.9rem",
@@ -45,7 +55,7 @@ class AdwButton extends HTMLElement {
                 color : "#c30101",
                 border : "0",
                 borderRadius : "8px",
-                minWidth : "150px",
+                minWidth : width || "150px",
                 padding : "8px",
                 fontFamily : "Inter",
                 fontSize : "0.9rem",
@@ -67,7 +77,7 @@ class AdwButton extends HTMLElement {
                 color : "black",
                 border : "0",
                 borderRadius : "100px",
-                minWidth : "150px",
+                minWidth : width || "150px",
                 padding : "14px",
                 fontFamily : "Inter",
                 fontSize : "0.9rem",
@@ -78,6 +88,12 @@ class AdwButton extends HTMLElement {
         const selectedStyle = buttonStyles[type] || buttonStyles.regular
         
         Object.assign(button.style,selectedStyle)
+
+        button.addEventListener(
+            "click" , () => {
+                Function(onclick)
+            }
+        )
         
         shadow.appendChild(button)
     }

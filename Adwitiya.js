@@ -1,1 +1,1 @@
-import "./components/AdwButton"
+import "./components/AdwButton.js"
