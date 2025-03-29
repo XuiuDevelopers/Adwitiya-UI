@@ -1,3 +1,9 @@
+/* 
+    PROJECT : ADWITIYA UI
+    AUTHOR  : MEGH BADONIYA
+    GITHUB  : XUIU DEVELOPERS
+    DATE    : 29/03/2025
+*/
 class AdwButton extends HTMLElement {
     constructor() {
         super()
