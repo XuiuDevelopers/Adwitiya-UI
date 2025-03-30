@@ -6,20 +6,36 @@
     DATE    : 30/03/2025
 */
 
-
 class AdwCard extends HTMLElement {
     constructor() {
         super();
         const shadow = this.attachShadow({ mode: "open" });
-        const card = document.createElement("article");
+        const card = document.createElement("div");
         const slot = document.createElement('slot');
+        const height = this.getAttribute("height");
+        const width = this.getAttribute("width");
+        const minheight = this.getAttribute("minheight");
+        const minwidth = this.getAttribute("minwidth");
+        const maxheight = this.getAttribute("maxheight");
+        const maxwidth = this.getAttribute("maxwidth");
 
         const styles = {
             backgroundColor: "white",
             color: "black",
             borderRadius: "8px",
-            padding: "16px",
-            boxShadow: "0 1px 5px rgba(0, 0, 0, 0.2)"
+            padding: "16px", // Increased padding for better spacing
+            boxShadow: "0 1px 5px rgba(0, 0, 0, 0.2)",
+            maxHeight: maxheight,
+            maxWidth: maxwidth,
+            width: width,
+            height: height,
+            minWidth: minwidth,
+            minHeight: minheight,
+            display: "flex",
+            flexDirection: "column", // Stack items vertically
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center", // Center text
         };
 
         Object.assign(card.style, styles);
@@ -30,4 +46,3 @@ class AdwCard extends HTMLElement {
 }
 
 customElements.define("adw-card", AdwCard);
-

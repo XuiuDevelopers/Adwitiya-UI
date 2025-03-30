@@ -25,9 +25,6 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
-                fontFamily: "Inter",
-                fontSize: "0.9rem",
-                fontWeight: 700,
                 hover: {
                     backgroundColor: "#d0d0d1",
                 }
@@ -39,9 +36,6 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
-                fontFamily: "Inter",
-                fontSize: "0.9rem",
-                fontWeight: 700,
                 hover: {
                     backgroundColor: "#f0f0f0",
                 }
@@ -53,9 +47,6 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
-                fontFamily: "Inter",
-                fontSize: "0.9rem",
-                fontWeight: 700,
                 hover: {
                     backgroundColor: "#2a6bbf",
                 }
@@ -67,9 +58,6 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
-                fontFamily: "Inter",
-                fontSize: "0.9rem",
-                fontWeight: 700,
                 hover: {
                     backgroundColor: "#e0b2b2",
                 }
@@ -80,10 +68,6 @@ class AdwButton extends HTMLElement {
                 border: "0",
                 borderRadius: "100px",
                 height: "40px",
-                width: "40px",
-                fontFamily: "Inter",
-                fontSize: "0.9rem",
-                fontWeight: 700,
                 hover: {
                     backgroundColor: "#d0d0d1",
                 }
@@ -95,9 +79,6 @@ class AdwButton extends HTMLElement {
                 borderRadius: "100px",
                 minWidth: width || "150px",
                 padding: "14px",
-                fontFamily: "Inter",
-                fontSize: "0.9rem",
-                fontWeight: 700,
                 hover: {
                     backgroundColor: "#d0d0d1",
                 }
@@ -105,9 +86,10 @@ class AdwButton extends HTMLElement {
         };
 
         const selectedStyle = buttonStyles[type] || buttonStyles.regular;
+
         Object.assign(button.style, selectedStyle);
 
-        button.textContent = this.textContent
+        button.innerHTML = this.innerHTML
 
         button.addEventListener("mouseenter", () => {
             button.style.backgroundColor = selectedStyle.hover.backgroundColor;
