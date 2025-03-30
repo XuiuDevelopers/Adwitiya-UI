@@ -1,23 +1,18 @@
 /* 
     PROJECT : ADWITIYA UI
+    FILE    : AdwButton.js
     AUTHOR  : MEGH BADONIYA
     GITHUB  : XUIU DEVELOPERS
     DATE    : 29/03/2025
-*/
-
-/* 
-    BUTTON
 */
 
 class AdwButton extends HTMLElement {
     constructor() {
         super();
 
-        // Components
         const shadow = this.attachShadow({ mode: "closed" });
         const button = document.createElement("button");
 
-        // Attributes
         const type = this.getAttribute("type");
         const width = this.getAttribute("width");
         const onclick = this.getAttribute("onclick");
