@@ -24,7 +24,6 @@ class AdwCard extends HTMLElement {
             color: "black",
             borderRadius: "8px",
             margin : "8px",
-            padding: "16px", // Increased padding for better spacing
             boxShadow: "0 1px 5px rgba(0, 0, 0, 0.2)",
             maxHeight: maxheight,
             maxWidth: maxwidth,
@@ -33,10 +32,9 @@ class AdwCard extends HTMLElement {
             minWidth: minwidth,
             minHeight: minheight,
             display: "flex",
-            flexDirection: "column", // Stack items vertically
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            textAlign: "center", // Center text
         };
 
         Object.assign(card.style, styles);
