@@ -23,7 +23,7 @@ class AdwCard extends HTMLElement {
             backgroundColor: "white",
             color: "black",
             borderRadius: "8px",
-            margin : "8px",
+            margin : "4px",
             boxShadow: "0 1px 5px rgba(0, 0, 0, 0.2)",
             maxHeight: maxheight,
             maxWidth: maxwidth,

@@ -10,14 +10,16 @@ class AdwText extends HTMLElement {
         const fontstyle = this.getAttribute("fontstyle")
         const style = {
             default : {
-                margin : 0,
+                margin : "4px",
+                padding : "4px",
                 fontFamily : fontfamily || "Inter",
                 fontSize : fontsize || "0.9rem",
                 fontWeight : fontWeight || "500",
                 fontStyle : fontstyle || "normal"
             },
             title : {
-                margin : 0,
+                margin : "4px",
+                padding : "4px",
                 fontFamily : fontfamily || "Inter",
                 fontSize : fontsize || "1.2rem",
                 fontWeight : fontWeight || "500",

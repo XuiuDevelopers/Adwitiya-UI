@@ -12,7 +12,7 @@ class AdwImage extends HTMLElement {
             borderRadius : "8px",
             width : width || "300px",
             height : height || "200px",
-            margin : "8px"
+            margin : "4px"
         }
 
         Object.assign(image.style,style)
