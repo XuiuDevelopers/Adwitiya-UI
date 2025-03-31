@@ -29,13 +29,13 @@ class AdwCard extends HTMLElement {
             maxWidth: maxwidth,
             width: width,
             height: height,
-            minWidth: minwidth || "16em",
-            minHeight: minheight || "8em",
+            minWidth: minwidth,
+            minHeight: minheight,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            padding : "16px"
+            padding : "8px"
         };
 
         Object.assign(card.style, styles);

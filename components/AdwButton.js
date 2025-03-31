@@ -25,6 +25,7 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
+                margin : "8px",
                 hover: {
                     backgroundColor: "#d0d0d1",
                 }
@@ -36,6 +37,7 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
+                margin : "8px",
                 hover: {
                     backgroundColor: "#f0f0f0",
                 }
@@ -47,6 +49,7 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
+                margin : "8px",
                 hover: {
                     backgroundColor: "#2a6bbf",
                 }
@@ -58,6 +61,7 @@ class AdwButton extends HTMLElement {
                 borderRadius: "8px",
                 minWidth: width || "150px",
                 padding: "8px",
+                margin : "8px",
                 hover: {
                     backgroundColor: "#e0b2b2",
                 }
@@ -68,6 +72,7 @@ class AdwButton extends HTMLElement {
                 border: "0",
                 borderRadius: "100px",
                 height: "40px",
+                margin : "8px",
                 hover: {
                     backgroundColor: "#d0d0d1",
                 }
@@ -79,6 +84,7 @@ class AdwButton extends HTMLElement {
                 borderRadius: "100px",
                 minWidth: width || "150px",
                 padding: "14px",
+                margin : "8px",
                 hover: {
                     backgroundColor: "#d0d0d1",
                 }
