@@ -13,7 +13,7 @@ const style = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh",
+  minHeight: "100vh",
 };
 
 Object.assign(document.body.style,style)
