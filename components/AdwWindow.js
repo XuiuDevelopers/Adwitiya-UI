@@ -11,6 +11,7 @@ const style = {
   margin: 0,
   padding: "8px",
   display: "flex",
+  flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   minHeight: "100vh",
