@@ -3,4 +3,5 @@ import './components/AdwCard.js'
 import './components/AdwWindow.js'
 import './components/AdwText.js'
 import './components/AdwImage.js'
+import './components/AdwInput.js'
 
